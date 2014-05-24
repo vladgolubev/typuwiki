@@ -18,7 +18,13 @@
 	height: 91%;
 	background-image: url('logo.png');
 	background-repeat: no-repeat;
-	background-position: 20px 175px;
+	background-position: 10px 190px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: default;
 }
 h1 {
 	border-bottom: 1px #969696 solid;

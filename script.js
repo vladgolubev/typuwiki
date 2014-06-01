@@ -1,20 +1,20 @@
 $('#headline').on('input', function(event) {
 	$('h1, span.bold').text($(this).val());
 });
-
 $('#image').on('keyup', function(event) {
 	$('img').attr('src', $(this).val());
 });
-
 $('#text').on('keyup', function(event) {
 	$('.regular').text($(this).val());
 });
-
 $('#headlineChange').on("change", function() {
 	var em = $(this).val();
 	$('h1').css({
 		"font-size": em + 'em'
 	});
+});
+$('#stretch').on('click', function() {
+	$('.imgWrapper img').toggleClass('stretchImg');
 });
 
 function updateValues() {
